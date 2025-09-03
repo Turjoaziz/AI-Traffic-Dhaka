@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trips xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/trips_file.xsd">
+
+  <vType id="mix" accel="2.6" decel="4.5" sigma="0.5" maxSpeed="50"/>
+
+  <!-- TODO: replace the placeholders below with real edge IDs from list_tls_edges.py -->
+  <flow id="N_to_S" type="mix" begin="0" end="1800" vehsPerHour="600"
+        from="N_IN_EDGE" to="S_OUT_EDGE"/>
+  <flow id="S_to_N" type="mix" begin="0" end="1800" vehsPerHour="600"
+        from="S_IN_EDGE" to="N_OUT_EDGE"/>
+  <flow id="E_to_W" type="mix" begin="0" end="1800" vehsPerHour="600"
+        from="E_IN_EDGE" to="W_OUT_EDGE"/>
+  <flow id="W_to_E" type="mix" begin="0" end="1800" vehsPerHour="600"
+        from="W_IN_EDGE" to="E_OUT_EDGE"/>
+
+</trips>

@@ -1,0 +1,15 @@
+<additional>
+  <!-- Base types -->
+  <vType id="car"    vClass="passenger" accel="2.6" decel="4.5" length="4.5" maxSpeed="20"/>
+  <vType id="moto"   vClass="motorcycle" accel="3.0" decel="4.5" length="2.1" maxSpeed="22" speedFactor="1.05"/>
+  <vType id="bus"    vClass="bus"        accel="1.2" decel="3.0" length="12"  maxSpeed="15"/>
+  <vType id="truck"  vClass="truck"      accel="1.0" decel="2.5" length="10"  maxSpeed="14"/>
+
+  <!-- Mix (weights sum ≈ 1.0) -->
+  <vTypeDistribution id="mix">
+    <vType vType="car"   probability="0.70"/>
+    <vType vType="moto"  probability="0.15"/>
+    <vType vType="bus"   probability="0.05"/>
+    <vType vType="truck" probability="0.10"/>
+  </vTypeDistribution>
+</additional>

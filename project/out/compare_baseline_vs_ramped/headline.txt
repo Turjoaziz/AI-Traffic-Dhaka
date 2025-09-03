@@ -1,0 +1,1 @@
+Average time loss increased by 0.0% (baseline 3.875s → variant 3.875s).

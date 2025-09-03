@@ -1,0 +1,6 @@
+metric,baseline,variant,delta,delta_%
+Dur_avg_s,37.795,37.795,0.0,0.0
+Dur_p5_s,,,,
+Dur_p95_s,79.3,79.3,0.0,0.0
+Wait_avg_s,1.805,1.805,0.0,0.0
+TimeLoss_avg_s,3.875,3.875,0.0,0.0

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+  <!-- Vehicle types WITH speed variance -->
+  <vType id="car"
+         accel="2.5" decel="4.5" length="4.5"
+         maxSpeed="70"
+         speedFactor="1.00"
+         speedDev="0.10"
+         color="1,0,0"/>
+
+  <vType id="bus"
+         accel="1.0" decel="2.0" length="12"
+         maxSpeed="50"
+         speedFactor="0.90"
+         speedDev="0.05"
+         color="0,0.6,0"/>
+
+  <vType id="rickshaw"
+         accel="1.5" decel="3.0" length="2.5"
+         maxSpeed="35"
+         speedFactor="0.85"
+         speedDev="0.08"
+         color="0,0,1"/>
+
+  <!-- Routes -->
+  <route id="r_north_up"   edges="498169188#0 498169188#1 498169188#2 498169188#3"/>
+  <route id="r_north_down" edges="24375221#0 24375221#1 24375221#2 24375221#3"/>
+
+  <route id="r_south_up"   edges="143957229#0 143957229#1 143957229#2 143957229#3 143957229#4 143957229#5 143957229#6 143957229#7 143957229#8 143957229#9"/>
+  <route id="r_south_down" edges="24375222#1 24375222#2 24375222#3 24375222#4 24375222#5 24375222#6 24375222#7 24375222#8 24375222#9"/>
+
+  <route id="r_east_up"    edges="343146616#0 343146616#1 343146616#2 343146616#3 343146616#4 343146616#5 343146616#6 343146616#7"/>
+  <route id="r_east_down"  edges="1088038754#0 1088038754#1 11075217#0 11075217#1 11075217#2 11075217#3"/>
+
+  <route id="r_west_up"    edges="24449129#9 24338292#1 24338292#3 24338292#4 24338292#5 24338292#6 24338292#7"/>
+  <route id="r_west_down"  edges="144567412#0 144567412#1 144567412#2 144567412#3 144567412#5 144567412#6 144567412#7"/>
+
+  <!-- ==== RAMPED FLOWS (same pattern everywhere) ====
+       Intervals: [0,600) peak1, [600,1200) peak2, [1200,1800) off-peak
+       Per interval per direction (car/rickshaw/bus):
+       400/300/80, 700/500/120, 300/200/60
+  -->
+
+  <!-- NORTH: up -->
+  <flow id="north_up_p1_car"      route="r_north_up" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="north_up_p1_rick"     route="r_north_up" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="north_up_p1_bus"      route="r_north_up" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="north_up_p2_car"      route="r_north_up" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="north_up_p2_rick"     route="r_north_up" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="north_up_p2_bus"      route="r_north_up" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="north_up_off_car"     route="r_north_up" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="north_up_off_rick"    route="r_north_up" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="north_up_off_bus"     route="r_north_up" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- NORTH: down -->
+  <flow id="north_dn_p1_car"      route="r_north_down" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_p1_rick"     route="r_north_down" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_p1_bus"      route="r_north_down" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="north_dn_p2_car"      route="r_north_down" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_p2_rick"     route="r_north_down" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_p2_bus"      route="r_north_down" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_off_car"     route="r_north_down" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_off_rick"    route="r_north_down" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="north_dn_off_bus"     route="r_north_down" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- SOUTH: up -->
+  <flow id="south_up_p1_car"      route="r_south_up" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="south_up_p1_rick"     route="r_south_up" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="south_up_p1_bus"      route="r_south_up" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="south_up_p2_car"      route="r_south_up" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="south_up_p2_rick"     route="r_south_up" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="south_up_p2_bus"      route="r_south_up" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="south_up_off_car"     route="r_south_up" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="south_up_off_rick"    route="r_south_up" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="south_up_off_bus"     route="r_south_up" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- SOUTH: down -->
+  <flow id="south_dn_p1_car"      route="r_south_down" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_p1_rick"     route="r_south_down" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_p1_bus"      route="r_south_down" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="south_dn_p2_car"      route="r_south_down" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_p2_rick"     route="r_south_down" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_p2_bus"      route="r_south_down" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_off_car"     route="r_south_down" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_off_rick"    route="r_south_down" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="south_dn_off_bus"     route="r_south_down" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- EAST: up -->
+  <flow id="east_up_p1_car"       route="r_east_up" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="east_up_p1_rick"      route="r_east_up" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="east_up_p1_bus"       route="r_east_up" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="east_up_p2_car"       route="r_east_up" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="east_up_p2_rick"      route="r_east_up" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="east_up_p2_bus"       route="r_east_up" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="east_up_off_car"      route="r_east_up" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="east_up_off_rick"     route="r_east_up" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="east_up_off_bus"      route="r_east_up" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- EAST: down -->
+  <flow id="east_dn_p1_car"       route="r_east_down" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_p1_rick"      route="r_east_down" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_p1_bus"       route="r_east_down" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="east_dn_p2_car"       route="r_east_down" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_p2_rick"      route="r_east_down" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_p2_bus"       route="r_east_down" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_off_car"      route="r_east_down" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_off_rick"     route="r_east_down" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="east_dn_off_bus"      route="r_east_down" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- WEST: up -->
+  <flow id="west_up_p1_car"       route="r_west_up" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="west_up_p1_rick"      route="r_west_up" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="west_up_p1_bus"       route="r_west_up" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="west_up_p2_car"       route="r_west_up" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="west_up_p2_rick"      route="r_west_up" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="west_up_p2_bus"       route="r_west_up" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="west_up_off_car"      route="r_west_up" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="west_up_off_rick"     route="r_west_up" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="west_up_off_bus"      route="r_west_up" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+  <!-- WEST: down -->
+  <flow id="west_dn_p1_car"       route="r_west_down" type="car"      begin="0" end="600"    vehsPerHour="400" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_p1_rick"      route="r_west_down" type="rickshaw" begin="0" end="600"    vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_p1_bus"       route="r_west_down" type="bus"      begin="0" end="600"    vehsPerHour="80"  departLane="free" departSpeed="max"/>
+  <flow id="west_dn_p2_car"       route="r_west_down" type="car"      begin="600" end="1200" vehsPerHour="700" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_p2_rick"      route="r_west_down" type="rickshaw" begin="600" end="1200" vehsPerHour="500" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_p2_bus"       route="r_west_down" type="bus"      begin="600" end="1200" vehsPerHour="120" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_off_car"      route="r_west_down" type="car"      begin="1200" end="1800" vehsPerHour="300" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_off_rick"     route="r_west_down" type="rickshaw" begin="1200" end="1800" vehsPerHour="200" departLane="free" departSpeed="max"/>
+  <flow id="west_dn_off_bus"      route="r_west_down" type="bus"      begin="1200" end="1800" vehsPerHour="60"  departLane="free" departSpeed="max"/>
+
+</routes>

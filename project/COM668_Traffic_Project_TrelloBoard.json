@@ -1,0 +1,215 @@
+{
+  "name": "COM668 AI Traffic Project - Sprint Board",
+  "lists": [
+    {
+      "id": "sprint_1",
+      "name": "Sprint 1",
+      "closed": false
+    },
+    {
+      "id": "sprint_2",
+      "name": "Sprint 2",
+      "closed": false
+    },
+    {
+      "id": "sprint_3",
+      "name": "Sprint 3",
+      "closed": false
+    },
+    {
+      "id": "sprint_4",
+      "name": "Sprint 4",
+      "closed": false
+    },
+    {
+      "id": "sprint_5",
+      "name": "Sprint 5",
+      "closed": false
+    },
+    {
+      "id": "sprint_6",
+      "name": "Sprint 6",
+      "closed": false
+    },
+    {
+      "id": "sprint_7",
+      "name": "Sprint 7",
+      "closed": false
+    },
+    {
+      "id": "sprint_8",
+      "name": "Sprint 8",
+      "closed": false
+    }
+  ],
+  "cards": [
+    {
+      "id": "card_1",
+      "name": "Write initial proposal",
+      "idList": "sprint_1",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_2",
+      "name": "Conduct literature review",
+      "idList": "sprint_1",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_3",
+      "name": "Setup Agile structure (Trello, GitHub)",
+      "idList": "sprint_1",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_4",
+      "name": "Investigate real-time sensor options",
+      "idList": "sprint_2",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_5",
+      "name": "Install SUMO",
+      "idList": "sprint_2",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_6",
+      "name": "Decide on synthetic data approach",
+      "idList": "sprint_2",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_7",
+      "name": "Generate synthetic trips using randomTrips.py",
+      "idList": "sprint_3",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_8",
+      "name": "Download Dhaka map from OSM",
+      "idList": "sprint_3",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_9",
+      "name": "Create routes.xml",
+      "idList": "sprint_3",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_10",
+      "name": "Define state/action/reward spaces",
+      "idList": "sprint_4",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_11",
+      "name": "Review RL papers",
+      "idList": "sprint_4",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_12",
+      "name": "Plan multi-intersection control",
+      "idList": "sprint_4",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_13",
+      "name": "Code RL agent in Python",
+      "idList": "sprint_5",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_14",
+      "name": "Setup TraCI interface",
+      "idList": "sprint_5",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_15",
+      "name": "Write config.sumocfg",
+      "idList": "sprint_5",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_16",
+      "name": "Implement multi-intersection simulation",
+      "idList": "sprint_6",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_17",
+      "name": "Tune reward function",
+      "idList": "sprint_6",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_18",
+      "name": "Debug SUMO behaviors",
+      "idList": "sprint_6",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_19",
+      "name": "Run simulation scenarios",
+      "idList": "sprint_7",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_20",
+      "name": "Collect and plot performance metrics",
+      "idList": "sprint_7",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_21",
+      "name": "Evaluate results",
+      "idList": "sprint_7",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_22",
+      "name": "Draft final report",
+      "idList": "sprint_8",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_23",
+      "name": "Build Code Manifest",
+      "idList": "sprint_8",
+      "desc": "",
+      "closed": false
+    },
+    {
+      "id": "card_24",
+      "name": "Record demo video and take screenshots",
+      "idList": "sprint_8",
+      "desc": "",
+      "closed": false
+    }
+  ]
+}

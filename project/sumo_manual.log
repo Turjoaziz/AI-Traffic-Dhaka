@@ -1,0 +1,17 @@
+***Starting server on port 8873 ***
+Loading net-file from '.\net/network.net.xml' ... done (114ms).
+Loading route-files incrementally from '.\routes/four_roads_ramped.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Error: tcpip::Socket::recvAndCheck @ recv: peer shutdown
+Quitting (on error).
+Simulation ended at time: 0.00.
+Performance:
+ Duration: 1680.94s
+ TraCI-Duration: 0.00s
+ Real time factor: 0
+ UPS: 0.000000
+Vehicles:
+ Inserted: 0
+ Running: 0
+ Waiting: 0

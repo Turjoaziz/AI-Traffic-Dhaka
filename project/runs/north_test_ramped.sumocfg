@@ -1,0 +1,21 @@
+<configuration>
+  <input>
+    <net-file value="../net/network.net.xml"/>
+    <route-files value="../routes/four_roads_ramped.rou.xml"/>
+  </input>
+
+  <time>
+    <begin value="0"/>
+    <end value="1800"/>
+    <step-length value="0.5"/>
+  </time>
+
+  <output>
+    <tripinfo-output value="ramped/out/tripinfo.xml"/>
+    <edgedata-output value="ramped/out/edgeData.xml"/>
+    <summary-output  value="ramped/out/summary.xml"/>
+    <!-- optional:
+    <lanedata-output value="ramped/out/laneData.xml"/>
+    <emission-output value="ramped/out/emissions.xml"/> -->
+  </output>
+</configuration>

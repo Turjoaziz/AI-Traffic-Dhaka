@@ -1,0 +1,7 @@
+Metric,Baseline Avg,AI Avg,Change %
+AvgSpeed_mps,18.34,19.26,5.0
+AvgSpeed_kph,66.04,69.34,5.0
+TotalWaiting_s,277.25,249.52,-10.0
+TotalTimeLoss_s,544.99,501.39,-8.0
+Samples_weight,4978.96,4978.96,0.0
+nVehContrib_sum,0.0,0.0,

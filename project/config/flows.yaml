@@ -1,0 +1,24 @@
+﻿duration: 1800
+seed: 7
+
+# target vehicles entering the network in 'duration' seconds (all types combined)
+target_total_trips: 4800   # ≈ 9,600 vph; adjust to taste
+
+# weight traffic by OSM highway type (adjust as you calibrate)
+type_weights:
+  motorway:   1.60
+  trunk:      1.45
+  primary:    1.25
+  secondary:  1.00
+  tertiary:   0.80
+  residential: 0.55
+  service:    0.30
+  unclassified: 0.50
+
+# vehicle composition (should sum ~1.0). Tune for Dhaka as you collect data.
+vehicle_mix:
+  car:          0.42
+  motorbike:    0.22
+  autorickshaw: 0.18
+  bus:          0.10
+  truck:        0.08

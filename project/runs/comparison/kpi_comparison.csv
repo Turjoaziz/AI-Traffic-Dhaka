@@ -1,0 +1,9 @@
+RoadDir,AvgSpeed_mps_baseline,AvgSpeed_kph_baseline,TotalWaiting_s_baseline,TotalTimeLoss_s_baseline,Samples_weight_baseline,nVehContrib_sum_baseline,AvgSpeed_mps_ramped,AvgSpeed_kph_ramped,TotalWaiting_s_ramped,TotalTimeLoss_s_ramped,Samples_weight_ramped,nVehContrib_sum_ramped,AvgSpeed_mps_delta,AvgSpeed_kph_delta,TotalWaiting_s_delta,TotalTimeLoss_s_delta,Samples_weight_delta,nVehContrib_sum_delta
+East_down,8.894,32.018,1026.5,1683.5,5414.17,0.0,8.894,32.018,1026.5,1683.5,5414.17,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+East_up,8.54,30.744,1191.5,1868.88,5596.77,0.0,8.54,30.744,1191.5,1868.88,5596.77,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+North_down,10.031,36.112,0.0,135.57,4626.79,0.0,10.031,36.112,0.0,135.57,4626.79,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+North_up,19.623,70.643,0.0,409.99,9682.12,0.0,19.623,70.643,0.0,409.99,9682.12,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+South_down,24.978,89.922,0.0,79.08,5613.66,0.0,24.978,89.922,0.0,79.08,5613.66,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+South_up,24.816,89.338,0.0,95.65,5715.74,0.0,24.816,89.338,0.0,95.65,5715.74,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+West_down,25.011,90.038,0.0,39.33,1447.01,0.0,25.011,90.038,0.0,39.33,1447.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+West_up,24.862,89.505,0.0,47.91,1735.43,0.0,24.862,89.505,0.0,47.91,1735.43,0.0,0.0,0.0,0.0,0.0,0.0,0.0
