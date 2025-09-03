@@ -1,0 +1,14 @@
+sumo-tools==1.18.0        # Or the SUMO version you used (adjust as needed)
+traci==1.18.0              # Python interface for SUMO (same version as SUMO)
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+scikit-learn>=1.0.0
+
+# One of these depending on your framework
+tensorflow==2.11.0         # If you used TensorFlow
+# torch==1.13.1             # Uncomment if you used PyTorch instead
+
+# Optional visualization/logging tools
+seaborn>=0.11.0
+tqdm>=4.62.0
